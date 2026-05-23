@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import messagebox, ttk, font
 import re
 
-
+def signal_quality(signal): if signal > 75: return "Excellent", "green" elif signal > 40: return "Good", "orange" else: return "Poor", "red"
 
 def band_from_channel(channel):
     if channel <= 14:
